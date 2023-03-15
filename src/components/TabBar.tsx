@@ -6,11 +6,12 @@ const TabBar = () => {
     <View
       style={{
         flex: 1,
-        height: 50,
+        height: 30,
         bottom: 0,
+        justifyContent: 'center',
         backgroundColor: 'grey',
       }}>
-      <Text>TabBar</Text>
+      <Text style={{textAlign: 'center'}}>TabBar</Text>
     </View>
   );
 };
