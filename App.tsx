@@ -2,16 +2,26 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import Home from './src/screens/Home';
 import TabBar from './src/components/TabBar';
+import AppBar from './src/components/AppBar';
+/* import theme from './src/theme';
 
+const style = StyleSheet.create({
+
+})
+ */
 function App(): JSX.Element {
   return (
     <View style={{flex: 1, justifyContent: 'center', backgroundColor: 'red'}}>
-      <Text>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-        nemo odio nisi ullam harum, dolor architecto ipsa nesciunt ea laudantium
-        vel! In voluptatibus ex natus quisquam enim labore veritatis numquam!
-      </Text>
-      <Home />
+      <AppBar />
+      <View>
+        <Text>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+          nemo odio nisi ullam harum, dolor architecto ipsa nesciunt ea
+          laudantium vel! In voluptatibus ex natus quisquam enim labore
+          veritatis numquam!
+        </Text>
+        <Home />
+      </View>
       <TabBar />
     </View>
   );
